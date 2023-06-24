@@ -26,8 +26,6 @@ router.get('/profile/:email',  async (req, res) => {
   }
 });
 
-
-
 // Create a new user
 router.post('/', async (req, res, next) => {
   try {
