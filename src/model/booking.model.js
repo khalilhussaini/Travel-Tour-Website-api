@@ -1,5 +1,7 @@
-const { DataTypes } = require('sequelize');
-const sequelize = require('./connection');
+
+
+import { DataTypes } from 'sequelize';
+import sequelize from '../config/connection.js';
 
 const Booking = sequelize.define('Booking', {
   name: {
@@ -28,4 +30,7 @@ const Booking = sequelize.define('Booking', {
   }
 });
 
-module.exports = Booking;
+export default Booking;
+
+// write me a json file fot the booking model
+
